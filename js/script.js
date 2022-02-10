@@ -1,3 +1,16 @@
+function fullVHfix() {
+	const fullScreens = document.querySelectorAll('[data-fullscreen]');
+	if (fullScreens.length && isMobile.any()) {
+		window.addEventListener('resize', fixHeight);
+		function fixHeight() {
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		}
+		fixHeight();
+	}
+}
+fullVHfix();
+
 const el = document.querySelector('#machine');
 const machine = new SlotMachine(el, {
 	active: 0,
@@ -50,7 +63,7 @@ if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
 var casinoAutoSpin;
 var casinoGoldAutoSpin;
 var casinoAgentJaneAutoSpin;
-document.querySelector('#spinSlot').addEventListener('click', () => {
+document.querySelector('.button-spin-2').addEventListener('click', () => {
 	if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
 		// clearInterval(casinoGoldAutoSpin);
 		// gameSlotTwo()
