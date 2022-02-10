@@ -1,0 +1,176 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper {
+	position: relative;
+	min-height: 100vh;
+	border: 1px solid #000;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 90%;
+		height: 90%;
+		transform: translate(-50%, -50%);
+		background-color: red;
+	}
+}
+
+.legends {
+	background: url("../img/game-1/bg_game_1.jpg") center / cover no-repeat;
+	height: calc(100vh - 142px);
+
+	&__wrapper {
+		height: calc(100vh - 270px);
+		overflow: hidden;
+		width: 50vw;
+		@media (max-width: 950px) {
+			height: calc(100vh - 200px);
+		}
+		@media (max-height: 415px) {
+			height: calc(100vh - 190px);
+		}
+
+		@media (max-height: 400px) {
+			height: calc(100vh - 185px);
+		}
+		@media (max-height: 380px) {
+			height: calc(100vh - 200px);
+		}
+		@media (max-height: 370px) {
+			height: calc(100vh - 175px);
+		}
+	}
+
+	// .legends__box
+
+	&__box {
+		display: flex;
+
+		@media (min-width: 1200px) {
+			gap: 22px;
+		}
+	}
+
+	// .legends__column
+
+	&__column {
+		flex: 0 1 25%;
+		overflow: hidden;
+	}
+
+	&__column-body {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+	}
+
+	// .legends__item
+
+	&__item {
+		padding-bottom: 10px;
+		img {
+			max-width: 100%;
+		}
+		@media (max-width: 1200px) {
+			img {
+				max-width: 90%;
+			}
+		}
+		@media (max-width: 1000px) {
+			// width: 50%;
+			img {
+				max-width: 70%;
+			}
+		}
+
+		// .legends__item_1
+
+		&_1 {
+		}
+
+		// .legends__item_2
+
+		&_2 {
+		}
+
+		// .legends__item_3
+
+		&_3 {
+		}
+
+		// .legends__item_4
+
+		&_4 {
+		}
+
+		// .legends__item_5
+
+		&_5 {
+		}
+
+		// .legends__item_6
+
+		&_6 {
+		}
+
+		// .legends__item_7
+
+		&_7 {
+		}
+
+		// .legends__item_8
+
+		&_8 {
+		}
+
+		// .legends__item_9
+
+		&_9 {
+		}
+	}
+}
+
+.button-spin {
+	height: 30px;
+	width: 50px;
+}
+
+.image {
+	height: 100px;
+}
+
+// .slot1 {
+// 	background: url("../img/game-1/g1_img_1.png");
+// }
+// .slot2 {
+// 	background: url("../img/game-1/g1_img_2.png");
+// }
+// .slot3 {
+// 	background: url("../img/game-1/g1_img_3.png");
+// }
+// .slot4 {
+// 	background: url("../img/game-1/g1_img_4.png");
+// }
+// .slot5 {
+// 	background: url("../img/game-1/g1_img_5.png");
+// }
+// .slot6 {
+// 	background: url("../img/game-1/g1_img_6.png");
+// }
+
+.row {
+	display: flex;
+	width: 44vw;
+	height: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	padding: 8px 0;
+}
+.column {
+	flex: 0 1 20%;
+}
