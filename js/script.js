@@ -16,7 +16,7 @@ fullVHfix();
 const el = document.querySelector('#machine');
 const machine = new SlotMachine(el, {
 	active: 0,
-	delay: 450,
+	delay: 1000,
 	auto: 1500
 });
 
