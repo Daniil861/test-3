@@ -28,10 +28,10 @@ function getRandomArbitrary(min, max) {
 }
 
 // Casiono game 2
-let casinoGold1 = document.querySelector('#name1');
-let casinoGold2 = document.querySelector('#name2');
-let casinoGold3 = document.querySelector('#name3');
-let casinoGold4 = document.querySelector('#name4');
+let casinoGold1 = document.querySelector('#name-1');
+let casinoGold2 = document.querySelector('#name-2');
+let casinoGold3 = document.querySelector('#name-3');
+let casinoGold4 = document.querySelector('#name-4');
 if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
 	let mcasinoGold1 = new SlotMachine(casinoGold1, {
 		active: 0,
