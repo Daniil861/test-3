@@ -67,16 +67,16 @@ var casinoGoldAutoSpin;
 var casinoAgentJaneAutoSpin;
 document.querySelector('.button-spin-2').addEventListener('click', () => {
 	if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
-		// clearInterval(casinoGoldAutoSpin);
-		// gameSlotTwo()
-		count = 3;
-		mcasinoGold1.shuffle(9999);
-		mcasinoGold2.shuffle(9999);
-		mcasinoGold3.shuffle(9999);
-		mcasinoGold4.shuffle(9999);
-		setTimeout(() => mcasinoGold1.stop(), getRandomArbitrary(minTime, maxTime));
-		setTimeout(() => mcasinoGold2.stop(), getRandomArbitrary(minTime, maxTime));
-		setTimeout(() => mcasinoGold3.stop(), getRandomArbitrary(minTime, maxTime));
-		setTimeout(() => mcasinoGold4.stop(), getRandomArbitrary(minTime, maxTime));
+		clearInterval(casinoGoldAutoSpin);
+		gameSlotTwo()
+		//count = 3;
+		//mcasinoGold1.shuffle(9999);
+		//mcasinoGold2.shuffle(9999);
+		//mcasinoGold3.shuffle(9999);
+		//mcasinoGold4.shuffle(9999);
+		//setTimeout(() => mcasinoGold1.stop(), getRandomArbitrary(minTime, maxTime));
+		//setTimeout(() => mcasinoGold2.stop(), getRandomArbitrary(minTime, maxTime));
+		//setTimeout(() => mcasinoGold3.stop(), getRandomArbitrary(minTime, maxTime));
+		//setTimeout(() => mcasinoGold4.stop(), getRandomArbitrary(minTime, maxTime));
 	}
 })
