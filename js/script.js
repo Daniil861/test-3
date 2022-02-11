@@ -20,18 +20,19 @@ const machine = new SlotMachine(el, {
 	auto: 1500
 });
 
+
 // Random Time
-let minTime = 500;
-let maxTime = 2000;
+var minTime = 500;
+var maxTime = 2000;
 function getRandomArbitrary(min, max) {
 	return Math.random() * (max - min) + min;
 }
 
 // Casiono game 2
-let casinoGold1 = document.querySelector('#name-1');
-let casinoGold2 = document.querySelector('#name-2');
-let casinoGold3 = document.querySelector('#name-3');
-let casinoGold4 = document.querySelector('#name-4');
+let casinoGold1 = document.querySelector('#name1');
+let casinoGold2 = document.querySelector('#name2');
+let casinoGold3 = document.querySelector('#name3');
+let casinoGold4 = document.querySelector('#name4');
 if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
 	let mcasinoGold1 = new SlotMachine(casinoGold1, {
 		active: 0,
@@ -65,18 +66,12 @@ if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
 let casinoAutoSpin;
 let casinoGoldAutoSpin;
 let casinoAgentJaneAutoSpin;
-document.querySelector('.button-spin-2').addEventListener('click', () => {
-	if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
-		clearInterval(casinoGoldAutoSpin);
-		gameSlotTwo()
-		//count = 3;
-		//mcasinoGold1.shuffle(9999);
-		//mcasinoGold2.shuffle(9999);
-		//mcasinoGold3.shuffle(9999);
-		//mcasinoGold4.shuffle(9999);
-		//setTimeout(() => mcasinoGold1.stop(), getRandomArbitrary(minTime, maxTime));
-		//setTimeout(() => mcasinoGold2.stop(), getRandomArbitrary(minTime, maxTime));
-		//setTimeout(() => mcasinoGold3.stop(), getRandomArbitrary(minTime, maxTime));
-		//setTimeout(() => mcasinoGold4.stop(), getRandomArbitrary(minTime, maxTime));
-	}
-})
+if (document.querySelector('.button-spin-2')) {
+	document.querySelector('.button-spin-2').addEventListener('click', () => {
+		if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
+			clearInterval(casinoGoldAutoSpin);
+			gameSlotTwo()
+		}
+	})
+}
+
