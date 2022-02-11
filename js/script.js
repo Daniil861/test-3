@@ -66,12 +66,12 @@ if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
 let casinoAutoSpin;
 let casinoGoldAutoSpin;
 let casinoAgentJaneAutoSpin;
-if (document.querySelector('.button-spin-2')) {
+
 	document.querySelector('.button-spin-2').addEventListener('click', () => {
 		if (casinoGold1 && casinoGold2 && casinoGold3 && casinoGold4) {
 			clearInterval(casinoGoldAutoSpin);
 			gameSlotTwo()
 		}
 	})
-}
+
 
